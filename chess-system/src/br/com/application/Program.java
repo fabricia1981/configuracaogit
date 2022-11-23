@@ -3,6 +3,7 @@
  */
 package br.com.application;
 
+import br.com.board.game.Board;
 import br.com.board.game.Position;
 
 /**
@@ -13,9 +14,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		Position pos = new Position(3,5);
-		System.out.println(pos);
-
+		Board board = new Board (8, 8);
+ 
 	}
 
 }
