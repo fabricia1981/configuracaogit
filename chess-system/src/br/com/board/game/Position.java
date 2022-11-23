@@ -2,11 +2,12 @@ package br.com.board.game;
 
 public class Position {
 	
-	private int row;
-	private int column;
+ //Topicos de OOP foram aplicados pois utilizei encapsulamento criando os gatters setters
+	private int row; //são privados e daí adiciono os gatters e setters
+	private int column; 
 	
+	// Aplicado também os Construtores recebendo os argumentos 
 	public Position(int row, int column) {
-	
 		this.row = row;
 		this.column = column;
 	}
@@ -33,8 +34,8 @@ public class Position {
 	//elas possuem o mesmo nome, mas funcionalidades ou ações diferentes. Obs Se você não reecrever o metodo 
 	//ele terá o comportamento da classe Pai, que pela logica é uma implementação 
 	
-	@Override
-	public String toString() {
+	@Override // Estou sobrescrevendo um metodo toString que é da classe Object
+	public String toString() { 
 		return row + "," + column;
 				
 	}
