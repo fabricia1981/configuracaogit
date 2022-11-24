@@ -14,6 +14,7 @@ public class Program {
 
 	public static void main(String[] args) {
 		
+		//instanciar o tabuleiro de Xadrez
 		Board board = new Board (8, 8);
  
 	}

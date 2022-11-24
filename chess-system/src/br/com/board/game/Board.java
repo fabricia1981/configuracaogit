@@ -4,12 +4,14 @@ public class Board {
 	
 	private int rows; 
 	private int columns;
-	private Piece[][] pieces;
+	private Piece[][] pieces; //matriz de peças
+	
 	
 	public Board(int rows, int columns) {
 		this.rows = rows;
 		this.columns = columns;
-		pieces = new Piece[rows][columns];
+		//minha matriz de peças será instanciada com peças na quantidade de linhas e colunas informadas
+		pieces = new Piece[rows][columns]; 
 	}
 
 	public int getRows() {
