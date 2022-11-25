@@ -1,10 +1,6 @@
-/**
- * 
- */
 package br.com.application;
 
-import br.com.board.game.Board;
-import br.com.board.game.Position;
+import br.com.chess.ChessMatch;
 
 /**
  * @author FGALLO
@@ -14,9 +10,12 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		//instanciar o tabuleiro de Xadrez
-		Board board = new Board (8, 8);
+		
+		ChessMatch chessMatch = new ChessMatch();
+		UI.printBoard(chessMatch.getPieces());
+		
+		}
  
 	}
 
-}
+
